@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    position: relative;
+}
+
+.header img {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-top: 8vh;
+    flex-direction: column;
+    /* background-color: rgba(131, 91, 91, 0.63); */
+}
+
+
+.search-area .search-bar {
+    width: 95%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #919191;
+
+}
+
+.fixed {
+    position: fixed;
+    top: 5px;
+    z-index: 999;
+}
+
+.search-area .search-bar img {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.search-bar .search-icon {
+    margin-left: 20px !important;
+}
+
+.search-area .search-bar .search-input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+
+/* ALL THE COUNTRY */
+
+.all-the-country {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.all-the-country .localisation-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 3px;
+}
+
+.all-the-country .close-button {
+    height: 16px;
+    width: 16px;
+    margin: 3px;
+}
+
+/* TOP CATEGORIES */
+
+.top-categories {
+    width: 95vw;
+    height: 20vh;
+    margin-left: 5vw
+}
+
+.top-categories .title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 15px 5px;
+}
+
+.owl-carousel .item {
+    height: 10vh;
+    border-radius: 5px;
+    padding-left: 4px;
+}
+
+.owl-carousel .item img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.owl-carousel .item .item-name {
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+    width: 100%;
+    height: 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 2;
+
+}
+
+.owl-carousel .item .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 3px;
+    border-radius: 5px;
+    width: 99%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.26);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.owl-carousel .item .ads-tag {
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    background-color: rgb(230, 138, 105);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 1px;
+    z-index: 2;
+}
+
+
+
+/* DERNIERS RECHERCHES  */
+.derniers-recherches {
+    width: 100vw;
+}
+
+.derniers-recherches .section-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.derniers-recherches .section-header .title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 15px 5px;
+    margin-left: 20px;
+}
+
+.derniers-recherches .section-header .info-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.derniers-recherches .category {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 24px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.derniers-recherches .category .arrow {
+    height: 15px;
+    width: 15px;
+}
+
+.derniers-recherches .owl2 .item {
+    height: 40vh;
+}
+
+.derniers-recherches .owl2 .item .item-image {
+    position: relative;
+    height: 25vh;
+}
+
+.owl2 .item .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.26);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.derniers-recherches .owl2 .item .images-count {
+    position: absolute;
+    bottom: 11px;
+    left: 15px;
+    height: 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 2;
+    background-color: rgba(36, 28, 28, 0.63);
+    width: 15vw;
+    border-radius: 18px;
+}
+
+.derniers-recherches .owl2 .item .images-count .count {
+    position: absolute;
+    top: 4px;
+    left: 38px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    ;
+}
+
+.derniers-recherches .owl2 .item .images-count img {
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    margin-left: 11px;
+}
+
+.owl2 .item .item-infos {
+    padding: 5px;
+}
+
+.owl2 .item .item-infos .info-header,
+.size {
+    font-weight: 600;
+}
+
+.owl2 .item .item-infos .price {
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+    color: rgb(22, 122, 32);
+    align-items: center;
+}
+
+.owl2 .item .item-infos .normal-price {
+    color: black;
+}
+
+.owl2 .item .item-infos .price img {
+    height: 18px;
+    width: 18px;
+}
+
+
+/* FRAICHEMENT  */
+
+.annonces-fraiche {
+    height: 95vh;
+}
+
+.annonces-fraiche .title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 15px 5px;
+    margin-left: 20px;
+}
+
+.annonces-fraiche .all-the-country {
+    width: 43vw;
+    margin: 0 auto;
+}
+
+
+.annonces-fraiche .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 7px;
+}
+
+
+.annonces-fraiche .item .item-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.annonces-fraiche .item .item-image {
+    position: relative;
+    height: 25vh;
+    width: 45vw;
+}
+
+.annonces-fraiche .item .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.26);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.annonces-fraiche .item .images-count {
+    position: absolute;
+    bottom: 11px;
+    left: 15px;
+    height: 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 2;
+    background-color: rgba(36, 28, 28, 0.63);
+    width: 15vw;
+    border-radius: 18px;
+}
+
+.annonces-fraiche .item .images-count .count {
+    position: absolute;
+    top: 4px;
+    left: 38px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    ;
+}
+
+.annonces-fraiche .item .images-count img {
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    margin-left: 11px;
+}
+
+.annonces-fraiche .item .item-infos {
+    padding: 5px;
+}
+
+.annonces-fraiche .item .item-infos .info-header {
+    width: 50vw;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.annonces-fraiche .item .item-infos .info-header,
+.size {
+    font-weight: 600;
+}
+
+
+.annonces-fraiche .item .item-infos .normal-price {
+    color: black;
+}
+
+.annonces-fraiche .item .item-infos .price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.annonces-fraiche .item .item-infos .price img {
+    height: 18px;
+    width: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 7vh;
+    z-index: 156;
+    background-color: white;
+
+}
+
+.footer .footer-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-item img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.footer-item .icon-section-name {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: black;
+}
+
+.footer-item:first-child .icon-section-name {
+    color: orangered;
+}
